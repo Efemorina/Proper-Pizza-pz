@@ -126,53 +126,53 @@ address {
   line-height: inherit;
 }
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: white; /* Arka plan beyaz */
-  color: black; /* Yazı rengi siyah */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Arka plan beyaz */
+    color: black; /* Yazı rengi siyah */
 }
 
-.containerr {
-  text-align: center;
-  padding: 20px;
+.container {
+    text-align: center;
+    padding: 20px;
 }
 
 .scroll-button {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 20px;
-  background-color: black; /* Buton arka plan rengi siyah */
-  color: white; /* Buton yazı rengi beyaz */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1000;
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Butonu sağa yerleştir */
+    padding: 10px;
+    background-color: black; /* Buton arka plan rengi siyah */
+    color: white; /* Buton yazı rengi beyaz */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 24px; /* Ok simgesi için font boyutu */
 }
 
 .scroll-button:hover {
-  background-color: white; /* Hover durumunda arka plan beyaz */
-  color: black; /* Hover durumunda yazı rengi siyah */
-  border: 1px solid black; /* Hover durumunda kenar rengi siyah */
+    background-color: white; /* Hover durumunda arka plan beyaz */
+    color: black; /* Hover durumunda yazı rengi siyah */
+    border: 1px solid black; /* Hover durumunda kenar rengi siyah */
 }
 
 .content {
-  margin-top: 100px; /* Butonun altında içerik görünmesi için boşluk */
+    margin-top: 100px; /* Butonun altında içerik görünmesi için boşluk */
 }
 
-.menuu {
-  margin-top: 50px;
-  padding: 20px;
-  background-color: white; /* Menü arka plan rengi beyaz */
-  border: 1px solid black; /* Menü kenar rengi siyah */
+.menu {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: white; /* Menü arka plan rengi beyaz */
+    border: 1px solid black; /* Menü kenar rengi siyah */
 }
 
 @media (min-width: 768px) {
-  .scroll-button {
-    display: none; /* Tablet ve masaüstü için butonu gizle */
-  }
+    .scroll-button {
+        display: none; /* Tablet ve masaüstü için butonu gizle */
+    }
 }
 
 ol,
