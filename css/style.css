@@ -133,7 +133,7 @@ body {
     color: black; /* Yazı rengi siyah */
 }
 
-.container {
+.containerr {
     text-align: center;
     padding: 20px;
 }
@@ -162,7 +162,7 @@ body {
     margin-top: 100px; /* Butonun altında içerik görünmesi için boşluk */
 }
 
-.menu {
+.menuu {
     margin-top: 50px;
     padding: 20px;
     background-color: white; /* Menü arka plan rengi beyaz */
