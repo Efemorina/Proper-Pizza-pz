@@ -61,9 +61,10 @@
 
     <section class="home-slider owl-carousel img" style="background-image: url(images/inside.jpg);">
 
-      <div class="slider-item" style="background-image: url(images/inside.jpg);">
+      <div class="slider-item"class="containerr" style="background-image: url(images/inside.jpg);">
       	<div class="overlay"></div>
         <div class="container">
+	<button class="scroll-button" onclick="scrollToMenu()">&#8595;</button> <!-- Aşağıyı gösteren ok simgesi -->
           <div class="row slider-text justify-content-center align-items-center">
 
             <div class="col-md-7 col-sm-12 text-center ftco-animate">
@@ -228,6 +229,10 @@
   <script src="js/scrollax.min.js"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+    <script>
+	function scrollToMenu() {
+            document.getElementById('menuu').scrollIntoView({ behavior: 'smooth' });
+        }
+</script>
   </body>
 </html>
