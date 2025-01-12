@@ -122,6 +122,26 @@
 	$('#dropdown04').on('show.bs.dropdown', function () {
 	  console.log('show');
 	});
+// Scroll to menu function (sayfayı aşağıya kaydırma)
+function scrollToMenu() {
+    window.scrollTo({
+        top: window.innerHeight, // Bir ekran boyutu kadar kaydırma
+        behavior: 'smooth'
+    });
+}
+
+// Owl Carousel initialization
+$(document).ready(function(){
+    $(".home-slider").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false
+    });
+});
 
 	// scroll
 	var scrollWindow = function() {
