@@ -73,7 +73,6 @@ section {
 }
 
 body {
-  overflow: scroll;
   margin: 0;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
@@ -133,10 +132,94 @@ body {
     background-color: white; /* Arka plan beyaz */
     color: black; /* Yazı rengi siyah */
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Slider container */
+.home-slider {
+  position: relative;
+  height: 100vh; /* Slider yüksekliğini ekran boyutuna göre ayarlıyoruz */
+  overflow: hidden;
+}
+
+/* Scroll button */
+.scroll-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.scroll-button:hover {
+  opacity: 0.8;
+}
+
+/* Owl Carousel slider item */
+.slider-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for text */
+h1, p {
+  color: white;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+/* Other button styles */
+.btn-primary {
+  background-color: #FF6347;
+}
 
 .containerr {
     text-align: center;
     padding: 20px;
+}
+body {
+  overflow: auto; /* veya scroll */
+}
+
+.home-slider {
+  overflow: visible; /* veya auto */
 }
 
 .scroll-button {
