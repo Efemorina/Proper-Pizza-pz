@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body >
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 			<a href="/" class="logo-link">
@@ -62,31 +62,31 @@
 	  </nav>
     <!-- END nav -->
 
-    <section class="home-slider owl-carousel img" style="background-image: url(images/bg_1.jpg);">
+	<section class="home-slider owl-carousel img" style="background-image: url('images/bg_1.jpg');">
+		<div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row slider-text align-items-center" data-scrollax-parent="true">
+					<div class="col-md-6 col-sm-12 ftco-animate">
+						<span class="subheading">Delicious</span>
+						<h1 class="mb-4">Pershuto Pizza</h1>
+						<p class="mb-4 mb-md-5">
+							A delicious combo of creamy white sauce and tender chicken. Perfectly baked with a crispy crust, this pizza offers a rich yet light flavor in every bite!
+						</p>
+						<p>
+							<a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a>
+							<a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a>
+						</p>
+					</div>
+					<div class="col-md-6 ftco-animate">
+						<img src="images/Pershuto-1024x1024.png" class="img-fluid" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
       <div class="slider-item" class="containerr">
-        <button class="scroll-button" onclick="scrollToMenu()">&#8595;</button> <!-- Aşağıyı gösteren ok simgesi -->
-
       	<div class="overlay"></div>
-        <div class="container">
-          <div class="row slider-text align-items-center" data-scrollax-parent="true">
-
-            <div class="col-md-6 col-sm-12 ftco-animate">
-            	<span class="subheading">Delicious</span>
-              <h1 class="mb-4"> Pershuto Pizza</h1>
-              <p class="mb-4 mb-md-5">A delicious combo of creamy white sauce and tender chicken. Perfectly baked with a crispy crust, this pizza offers a rich yet light flavor in every bite!			  </p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
-            </div>
-            <div class="col-md-6 ftco-animate">
-            	<img src="images/Pershuto-1024x1024.png" class="img-fluid" alt="">
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="slider-item" class="containerr">
-      	<div class="overlay"></div>
-        <button class="scroll-button" onclick="scrollToMenu()">&#8595;</button> <!-- Aşağıyı gösteren ok simgesi -->
 
         <div class="container">
           <div class="row slider-text align-items-center" data-scrollax-parent="true">
@@ -107,7 +107,6 @@
 
       <div class="slider-item" class="containerr" style="background-image: url(images/inside.jpg);">
       	<div class="overlay"></div>
-        <button class="scroll-button" onclick="scrollToMenu()">&#8595;</button> <!-- Aşağıyı gösteren ok simgesi -->
 
         <div class="container">
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
@@ -791,6 +790,15 @@
             document.getElementById('menuu').scrollIntoView({ behavior: 'smooth' });
         }
 </script>
-    
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
   </body>
 </html>
