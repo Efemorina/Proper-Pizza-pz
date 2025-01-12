@@ -65,9 +65,8 @@
       <div class="slider-item"class="containerr" style="background-image: url(images/inside.jpg);">
       	<div class="overlay"></div>
         <div class="container">
-	<button class="scroll-button" onclick="scrollToMenu()">&#8595;</button> <!-- Aşağıyı gösteren ok simgesi -->
 
-          <div class="row slider-text justify-content-center align-items-center">
+          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-7 col-sm-12 text-center ftco-animate">
             	<h1 class="mb-3 mt-5 bread">About</h1>
@@ -307,5 +306,15 @@
             document.getElementById('menuu').scrollIntoView({ behavior: 'smooth' });
         }
 </script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
   </body>
 </html>
