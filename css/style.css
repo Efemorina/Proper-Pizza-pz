@@ -3185,6 +3185,46 @@ fieldset:disabled a.btn {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
+/* Haritaların konteyneri */
+.map-container {
+  display: flex; /* Flexbox ile hizalama */
+  justify-content: space-between; /* Haritalar arasında boşluk */
+  gap: 20px; /* Haritalar arasına boşluk */
+  flex-wrap: wrap; /* Ekran küçüldükçe taşmaları engeller */
+}
+
+/* iframe'lere genel stil */
+.map-container iframe {
+  width: 48%; /* Her harita %48 genişlikte olacak */
+  height: 300px; /* Yükseklik */
+  border: 0; /* Çerçeveyi kaldır */
+}
+
+/* Mobilde (max-width: 768px) iframe'leri alt alta sıralama */
+@media (max-width: 768px) {
+  .map-container {
+      flex-direction: column; /* Haritaları dikey yap */
+      align-items: center; /* Ortalamak için */
+  }
+
+  .map-container iframe {
+      width: 100%; /* İframe'lerin genişliğini %100 yap */
+      margin-bottom: 20px; /* İframe'ler arasına boşluk ekle */
+  }
+}
+/* Yatay kaydırmayı engelle */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Mobil ve tablet görünümünde sağa kaymayı engellemek için */
+@media (max-width: 768px) {
+  .container, .row, .col-md-5 {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+  }
+}
 
 .btn-outline-info {
   color: #17a2b8;
@@ -4373,6 +4413,7 @@ input[type="button"].btn-block {
 .tab-content > .active {
   display: block;
 }
+
 
 .navbar {
   position: relative;
